@@ -1,8 +1,8 @@
 @font-face {
     /* 为载入的字体取名字(随意) */
-    font-family: '落霞文楷';	
+    font-family: 'LXWK';	
     /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url('font/LXGWWenKaiGBScreen.ttf') format("truetype");
+    src: url('fonts/LXWK.ttf') format("truetype");
     /* 定义加粗样式(加粗多少) */
     font-weight: normal;
     /* 定义字体样式(斜体/非斜体) */
@@ -12,5 +12,5 @@
   }
 
 body {
-    font-family: '落霞文楷', serif;
+    font-family: 'LXWK', serif;
 }
