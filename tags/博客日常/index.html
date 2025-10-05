@@ -266,6 +266,11 @@
                         
                             <!-- 当前仅支持valine/waline自带的统计功能 -->
                             
+                                <a id="/2025/10/04/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E5%8D%9A%E5%AE%A2%EF%BC%81/" class="leancloud_visitors" data-flag-title="Hello, Blog！">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
                         
                         
                             <!-- 当前仅支持waline自带的统计功能 -->
@@ -286,6 +291,30 @@
 
     <div class="hidden">
         <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+        
+            <div id="v-comments" class="post-comments bg-image"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'nLV43lQMFVCNTCbYhjP6lphP-MdYXbMMI',
+                appKey: 'zLQdxx5UheQSC3jv40ek5s0o',
+                visitor: true,
+                enableQQ: true,
+                path: '/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/index.html'
+            });
+        }
+        if (typeof Valine === 'undefined') {
+            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+
         
     </div>
 
