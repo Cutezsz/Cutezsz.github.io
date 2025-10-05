@@ -12,7 +12,7 @@
         el: '#v-comments',
         appId: 'nLV43lQMFVCNTCbYhjP6lphP-MdYXbMMI',
         appKey: 'zLQdxx5UheQSC3jv40ek5s0o',
-        serverURLs: 'https://nlv43lqm.api.lncldglobal.com',
+        //serverURLs: 'https://nlv43lqm.api.lncldglobal.com',
         path,
       });
     }
