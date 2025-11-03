@@ -17,12 +17,12 @@
   
     <meta name="keywords" content="信息学奥赛, 教程, 笔记" />
   
-  <meta name="description" content="引言——字符串匹配问题本文将记录我对KMP算法的理解，下面进入正题。字符串匹配问题：给定字符串A和字符串B，询问B是否出现在A中，或者说，B是否是A的字串，如果是，那么出现在哪个位置？这就是字符串匹配问题，其中A称为主串，B称为模式串。字符串匹配应用广泛，现代算法对于文章中查找字词的一类，KMP基本是效率较高的一类了，一般复杂度为O(n+m)。 友情链接这篇文章受此视频启发：【KMP 学一遍忘一遍">
+  <meta name="description" content="引言——字符串匹配问题 本文将记录我对KMP算法的理解，下面进入正题。 字符串匹配问题：给定字符串A和字符串B，询问B是否出现在A中， 或者说，B是否是A的字串，如果是，那么出现在哪个位置？ 这就是字符串匹配问题，其中A称为主串，B称为模式串。 字符串匹配应用广泛，现代算法对于文章中查找字词的一类，KMP基本是效率较高的一类了，一般复杂度为O(n+m)。 友情链接 这篇文章受此视频启发： 【KMP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【笔记】KMP学习笔记">
 <meta property="og:url" content="http://cutezsz.github.io/2025/10/16/KMP%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Cute_zsz的小站">
-<meta property="og:description" content="引言——字符串匹配问题本文将记录我对KMP算法的理解，下面进入正题。字符串匹配问题：给定字符串A和字符串B，询问B是否出现在A中，或者说，B是否是A的字串，如果是，那么出现在哪个位置？这就是字符串匹配问题，其中A称为主串，B称为模式串。字符串匹配应用广泛，现代算法对于文章中查找字词的一类，KMP基本是效率较高的一类了，一般复杂度为O(n+m)。 友情链接这篇文章受此视频启发：【KMP 学一遍忘一遍">
+<meta property="og:description" content="引言——字符串匹配问题 本文将记录我对KMP算法的理解，下面进入正题。 字符串匹配问题：给定字符串A和字符串B，询问B是否出现在A中， 或者说，B是否是A的字串，如果是，那么出现在哪个位置？ 这就是字符串匹配问题，其中A称为主串，B称为模式串。 字符串匹配应用广泛，现代算法对于文章中查找字词的一类，KMP基本是效率较高的一类了，一般复杂度为O(n+m)。 友情链接 这篇文章受此视频启发： 【KMP">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://free.picui.cn/free/2025/10/06/68e3757d034cb.ico">
 <meta property="article:published_time" content="2025-10-16T13:35:05.000Z">
@@ -287,7 +287,7 @@
                         <i class="fa fa-edit"></i> 
                         
                         
-                            ~2.00K
+                            ~2.01K
                         
                         字
                     </li>
@@ -310,16 +310,42 @@
             
             
             <hr />
-            <div itemprop="articleBody"><h1 id="引言——字符串匹配问题"><a href="#引言——字符串匹配问题" class="headerlink" title="引言——字符串匹配问题"></a>引言——字符串匹配问题</h1><p>本文将记录我对KMP算法的理解，下面进入正题。<br>字符串匹配问题：给定字符串A和字符串B，询问B是否出现在A中，<br>或者说，B是否是A的字串，如果是，那么出现在哪个位置？<br>这就是字符串匹配问题，其中A称为<strong>主串</strong>，B称为<strong>模式串</strong>。<br>字符串匹配应用广泛，现代算法对于文章中查找字词的一类，KMP基本是效率较高的一类了，一般复杂度为O(n+m)。</p>
-<h1 id="友情链接"><a href="#友情链接" class="headerlink" title="友情链接"></a>友情链接</h1><p>这篇文章受此视频启发：<br>【KMP 学一遍忘一遍？ACM 金牌选手用可视化直击本质，理解了内核后想忘记都难！】<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Er421K7kF?vd_source=fe719f26ed8599118e43450084e5d67e">https://www.bilibili.com/video/BV1Er421K7kF?vd_source=fe719f26ed8599118e43450084e5d67e</a></p>
-<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>对于字符串S，规定其下标从0到n-1，<br>定义nxt[i]表示截取S下标[0,i]的位置，其中最长的不包含自身的公共前后缀的长度。<br>例如：字符串S：<code>abacab</code>的nxt数组内容如下，<br>nxt[0]=0（不包含自身），<br>nxt[1]=0（’a’≠’b’），<br>nxt[2]=1（’a’=’a’），<br>nxt[3]=0（没有公共前后缀），<br>nxt[4]=1（首尾相等），<br>nxt[5]=2（ab=ab）。</p>
-<h1 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h1><p>上文的准备后，继续下一步。<br>现在将模式串和主串用一个特殊字符（可以是#、&amp;这样的）连接在一起。<br>形成<code>模式串+&#39;#&#39;+主串</code>的格式。</p>
-<p>下面是最关键的一步。<br>对于拼接好的字符串，我们求一遍nxt数组，<br>结论：在’#’符号后面找到一个i，若nxt[i]等于模式串的长度，则i是模式串出现的位置。</p>
-<h1 id="证明"><a href="#证明" class="headerlink" title="证明"></a>证明</h1><p>考虑找到nxt[i]=模式串.size()时，nxt[i]表示：截取模式串到当前第i位的字符串，最长的公共前后缀的长度是多少。</p>
-<p>首先，nxt[i]不可能大于#号的位置，后续这个字符没有出现。<br>那么一但nxt[i]=模式串.size()，则表明[0,i]的后缀和模式串匹配了，也就是模式串在#后的主串中出现了，符合问题的需求。</p>
-<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt; </span><br><span class="line">#define endl &#x27;\n&#x27;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">typedef long long ll;</span><br><span class="line">const ll N = 1e6 + 10;</span><br><span class="line"></span><br><span class="line">string s, p;</span><br><span class="line">ll nxt[N], ans;</span><br><span class="line">ll kmp()</span><br><span class="line">&#123;</span><br><span class="line">    string t = p + &quot;#&quot; + s;     // 拼接字符串</span><br><span class="line">    for (ll i = 1; i &lt; t.size(); i ++) &#123;        // 从1遍历是因为nxt[0]=0        </span><br><span class="line">        // 在计算nxt[i]前，保证nxt[0~i-1]已经计算完毕。</span><br><span class="line">        // 记len为遍历到i-1时前缀的下一位，则i与len进行匹配</span><br><span class="line">        // 分两种情况：若t[i]=t[len]，则前缀和后缀又多一位,nxt[i]=len+1</span><br><span class="line">        // 否则，我们现在找的前后缀就行不通了，这时候只能去考虑更小的公共前后缀。</span><br><span class="line">        // 于是回溯，观察发现将len不断回跳到nxt[len-1]，也就是当前前后缀的上一个的最长前后缀</span><br><span class="line">        // 可以匹配，于是使用while，不断跳跃</span><br><span class="line">        // 最后判断如果nxt[i]=p.size()，就返回位置（需要先特殊处理一下），结束</span><br><span class="line">        ll len = nxt[i - 1];</span><br><span class="line">        while (len != 0 &amp;&amp; t[len] != t[i]) len = nxt[len - 1];</span><br><span class="line">        if (t[len] == t[i]) &#123;</span><br><span class="line">            nxt[i] = len + 1;</span><br><span class="line">            if (nxt[i] == p.size()) return i - p.size() * 2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    ios::sync_with_stdio(0), cout.tie(0), cin.tie(0);</span><br><span class="line">    cin &gt;&gt; s &gt;&gt; p;</span><br><span class="line">    cout &lt;&lt; kmp() &lt;&lt; endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <div itemprop="articleBody"><h1>引言——字符串匹配问题</h1>
+<p>本文将记录我对KMP算法的理解，下面进入正题。<br>
+字符串匹配问题：给定字符串A和字符串B，询问B是否出现在A中，<br>
+或者说，B是否是A的字串，如果是，那么出现在哪个位置？<br>
+这就是字符串匹配问题，其中A称为<strong>主串</strong>，B称为<strong>模式串</strong>。<br>
+字符串匹配应用广泛，现代算法对于文章中查找字词的一类，KMP基本是效率较高的一类了，一般复杂度为O(n+m)。</p>
+<h1>友情链接</h1>
+<p>这篇文章受此视频启发：<br>
+【KMP 学一遍忘一遍？ACM 金牌选手用可视化直击本质，理解了内核后想忘记都难！】<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Er421K7kF?vd_source=fe719f26ed8599118e43450084e5d67e">https://www.bilibili.com/video/BV1Er421K7kF?vd_source=fe719f26ed8599118e43450084e5d67e</a></p>
+<h1>准备工作</h1>
+<p>对于字符串S，规定其下标从0到n-1，<br>
+定义nxt[i]表示截取S下标[0,i]的位置，其中最长的不包含自身的公共前后缀的长度。<br>
+例如：字符串S：<code>abacab</code>的nxt数组内容如下，<br>
+nxt[0]=0（不包含自身），<br>
+nxt[1]=0（‘a’≠’b’），<br>
+nxt[2]=1（‘a’=‘a’），<br>
+nxt[3]=0（没有公共前后缀），<br>
+nxt[4]=1（首尾相等），<br>
+nxt[5]=2（ab=ab）。</p>
+<h1>思路</h1>
+<p>上文的准备后，继续下一步。<br>
+现在将模式串和主串用一个特殊字符（可以是#、&amp;这样的）连接在一起。<br>
+形成<code>模式串+'#'+主串</code>的格式。</p>
+<p>下面是最关键的一步。<br>
+对于拼接好的字符串，我们求一遍nxt数组，<br>
+结论：在’#'符号后面找到一个i，若nxt[i]等于模式串的长度，则i是模式串出现的位置。</p>
+<h1>证明</h1>
+<p>考虑找到nxt[i]=模式串.size()时，nxt[i]表示：截取模式串到当前第i位的字符串，最长的公共前后缀的长度是多少。</p>
+<p>首先，nxt[i]不可能大于#号的位置，后续这个字符没有出现。<br>
+那么一但nxt[i]=模式串.size()，则表明[0,i]的后缀和模式串匹配了，也就是模式串在#后的主串中出现了，符合问题的需求。</p>
+<h1>代码</h1>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;bits/stdc++.h&gt; </span><br><span class="line">#define endl &#x27;\n&#x27;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">typedef long long ll;</span><br><span class="line">const ll N = 1e6 + 10;</span><br><span class="line"></span><br><span class="line">string s, p;</span><br><span class="line">ll nxt[N], ans;</span><br><span class="line">ll kmp()</span><br><span class="line">&#123;</span><br><span class="line">    string t = p + &quot;#&quot; + s;     // 拼接字符串</span><br><span class="line">    for (ll i = 1; i &lt; t.size(); i ++) &#123;        // 从1遍历是因为nxt[0]=0        </span><br><span class="line">        // 在计算nxt[i]前，保证nxt[0~i-1]已经计算完毕。</span><br><span class="line">        // 记len为遍历到i-1时前缀的下一位，则i与len进行匹配</span><br><span class="line">        // 分两种情况：若t[i]=t[len]，则前缀和后缀又多一位,nxt[i]=len+1</span><br><span class="line">        // 否则，我们现在找的前后缀就行不通了，这时候只能去考虑更小的公共前后缀。</span><br><span class="line">        // 于是回溯，观察发现将len不断回跳到nxt[len-1]，也就是当前前后缀的上一个的最长前后缀</span><br><span class="line">        // 可以匹配，于是使用while，不断跳跃</span><br><span class="line">        // 最后判断如果nxt[i]=p.size()，就返回位置（需要先特殊处理一下），结束</span><br><span class="line">        ll len = nxt[i - 1];</span><br><span class="line">        while (len != 0 &amp;&amp; t[len] != t[i]) len = nxt[len - 1];</span><br><span class="line">        if (t[len] == t[i]) &#123;</span><br><span class="line">            nxt[i] = len + 1;</span><br><span class="line">            if (nxt[i] == p.size()) return i - p.size() * 2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    ios::sync_with_stdio(0), cout.tie(0), cin.tie(0);</span><br><span class="line">    cin &gt;&gt; s &gt;&gt; p;</span><br><span class="line">    cout &lt;&lt; kmp() &lt;&lt; endl;</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>有不明白的可以看注释，可以结合视频辅助理解。</p>
-<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>KMP可能是一道坎吧，总是看了忘忘了看，希望本篇从另一个视角出发，能带给你更深的理解。<br>文：Cute_zsz</p>
+<h1>结语</h1>
+<p>KMP可能是一道坎吧，总是看了忘忘了看，希望本篇从另一个视角出发，能带给你更深的理解。<br>
+文：Cute_zsz</p>
 </div>
         </div>
         
@@ -389,7 +415,11 @@
             const twitterBase   = "https://twitter.com/intent/tweet?";
             const hostUrl       = "http://cutezsz.github.io/2025/10/16/KMP%E7%AC%94%E8%AE%B0/";
             const title         = "「【笔记】KMP学习笔记」";
-            const excerpt       = `引言——字符串匹配问题本文将记录我对KMP算法的理解，下面进入正题。字符串匹配问题：给定字符串A和字符串B，询问B是否出现在A中，或者说，B是否是A的字串，如果是，那么出现在哪个位置？这就是字符串匹配问题，其中A称为主串，B称为模式串...`;
+            const excerpt       = `引言——字符串匹配问题
+本文将记录我对KMP算法的理解，下面进入正题。
+字符串匹配问题：给定字符串A和字符串B，询问B是否出现在A中，
+或者说，B是否是A的字串，如果是，那么出现在哪个位置？
+这就是字符串匹配问题，其中A称为主串，B称...`;
             let _URL;
             switch (dest) {
                 case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
