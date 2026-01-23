@@ -3,7 +3,7 @@
     <head>
   <!-- 元数据 -->
   <meta charset="utf-8">
-  <link rel="icon" href="https://free.picui.cn/free/2025/10/06/68e3757d034cb.ico">
+  <link rel="icon" href="https://i.imgs.ovh/2026/01/24/yqtrtN.jpeg">
   
   <title>【笔记】AC自动机（ACAM）学习笔记（下）—失配树优化 | Cute_zsz的小站</title>
   
@@ -24,14 +24,14 @@
 <meta property="og:site_name" content="Cute_zsz的小站">
 <meta property="og:description" content="你需要学习的 请看本文的上篇：here 回忆 在AC自动机的上篇，我们学习了AC自动机的基本思路。观察下面代码： 12345678910111213141516ll query(string s){    ll p &#x3D; 0, ans &#x3D; 0;    for (auto i : s)    {        ll ch &#x3D; i - &#39;a&#39; + 1;        p &#x3D; tr[p][ch];">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://free.picui.cn/free/2025/10/06/68e3757d034cb.ico">
+<meta property="og:image" content="https://i.imgs.ovh/2026/01/24/yqtrtN.jpeg">
 <meta property="article:published_time" content="2026-01-23T16:00:30.000Z">
-<meta property="article:modified_time" content="2026-01-23T16:53:23.726Z">
+<meta property="article:modified_time" content="2026-01-23T17:00:27.301Z">
 <meta property="article:author" content="Cute_zsz">
 <meta property="article:tag" content="信息学奥赛">
 <meta property="article:tag" content="笔记">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://free.picui.cn/free/2025/10/06/68e3757d034cb.ico">
+<meta name="twitter:image" content="https://i.imgs.ovh/2026/01/24/yqtrtN.jpeg">
   
   <!-- 站点验证相关 -->
   
@@ -224,7 +224,7 @@ mjx-container[display="true"] + br {
                                                         
                                                     
                                                         
-                                                            <li><a href="https://cutezsz.github.io/2025/10/04/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/%E4%BD%A0%E5%A5%BD%EF%BC%8C%E5%8D%9A%E5%AE%A2%EF%BC%81/">个人简介</a></li>
+                                                            <li><a href="https://cutezsz.github.io/2025/10/04/1/">个人简介</a></li>
                                                         
                                                     
                                                         
@@ -426,14 +426,14 @@ mjx-container[display="true"] + br {
             
             <div id="expire-alert" class="alert alert-warning hidden" role="alert">
                 <div class="icon"><i class="fa fa-warning"></i></div>
-                <div class="text"><p>本文最后编辑于 <time datetime="1769187203726"></time> 前，其中的内容可能需要更新。</p></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1769187627301"></time> 前，其中的内容可能需要更新。</p></div>
             </div>
             
             
             
             <hr />
             <div itemprop="articleBody"><h1>你需要学习的</h1>
-<p>请看本文的上篇：<a href="">here</a></p>
+<p>请看本文的上篇：<a href="https://cutezsz.github.io/2026/01/12/10/">here</a></p>
 <h1>回忆</h1>
 <p>在AC自动机的上篇，我们学习了AC自动机的基本思路。观察下面代码：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ll <span class="title">query</span><span class="params">(string s)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    ll p = <span class="number">0</span>, ans = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> i : s)</span><br><span class="line">    {</span><br><span class="line">        ll ch = i - <span class="string">'a'</span> + <span class="number">1</span>;</span><br><span class="line">        p = tr[p][ch];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (ll j = p; j &amp;&amp; ed[j] != <span class="number">-1</span>; j = fail[j]) {     </span><br><span class="line">            ans += ed[j], ed[j] = <span class="number">-1</span>;       </span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
@@ -558,7 +558,7 @@ mjx-container[display="true"] + br {
                     <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>, <a class="tag-none-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a>
                 </div>
                 <div class="pull-date">
-                    <time datetime="2026-01-23T16:53:23.726Z" itemprop="dateModified">最后编辑：2026-01-24</time>
+                    <time datetime="2026-01-23T17:00:27.301Z" itemprop="dateModified">最后编辑：2026-01-24</time>
                 </div>
             </div>
         </footer>
