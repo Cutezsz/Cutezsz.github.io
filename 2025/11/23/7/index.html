@@ -20,7 +20,7 @@
   <meta name="description" content="引入 在字符串集合  中查找 模式串 ，我们会使用 字典树 算法来解决形如这样的问题。 字典树（以下简称Trie）是一棵多叉树，为处理字符串而生，若使用红黑树等算法解决上述问题，则时间复杂度为 ，其中 ，这是因为比较两字符串是否相同仍需要依次比较。 那字典树的复杂度呢？仅为 ！！！（不是阶乘，仅表示感叹） 那这么牛的算法，原理是什么呢？ 原理 具象化上文的问题：给定字符集合 ，查找模式串  是否存">
 <meta property="og:type" content="article">
 <meta property="og:title" content="【笔记】Trie字典树学习笔记">
-<meta property="og:url" content="http://cutezsz.github.io/2025/11/23/Trie%E5%AD%97%E5%85%B8%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:url" content="http://cutezsz.github.io/2025/11/23/7/index.html">
 <meta property="og:site_name" content="Cute_zsz的小站">
 <meta property="og:description" content="引入 在字符串集合  中查找 模式串 ，我们会使用 字典树 算法来解决形如这样的问题。 字典树（以下简称Trie）是一棵多叉树，为处理字符串而生，若使用红黑树等算法解决上述问题，则时间复杂度为 ，其中 ，这是因为比较两字符串是否相同仍需要依次比较。 那字典树的复杂度呢？仅为 ！！！（不是阶乘，仅表示感叹） 那这么牛的算法，原理是什么呢？ 原理 具象化上文的问题：给定字符集合 ，查找模式串  是否存">
 <meta property="og:locale" content="zh_CN">
@@ -291,7 +291,7 @@ mjx-container[display="true"] + br {
                 文章
             </span>
             <span class="count">
-                10
+                11
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -322,7 +322,7 @@ mjx-container[display="true"] + br {
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" style="font-size: 0.6em;">微积分</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.75em;">教程</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.6em;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/" style="font-size: 0.6em;">数学史</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E5%AF%84/" style="font-size: 0.6em;">生活游寄</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.6em;">生活游记</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 0.7em;">笔记</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 0.65em;">题解</a>
+        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" style="font-size: 0.6em;">微积分</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.7em;">教程</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.6em;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/" style="font-size: 0.6em;">数学史</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E5%AF%84/" style="font-size: 0.6em;">生活游寄</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.6em;">生活游记</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 0.75em;">笔记</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 0.65em;">题解</a>
       </div>
   </aside>
 
@@ -336,34 +336,36 @@ mjx-container[display="true"] + br {
         
           
           
-            <a class="list-group-item" href="/2026/01/12/%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91AC%E8%87%AA%E5%8A%A8%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="fa  fa-book"></i> 【笔记】AC自动机（ACAM）学习笔记</a>
+            <a class="list-group-item" href="/2026/01/24/11/"><i class="fa  fa-book"></i> 【笔记】AC自动机（ACAM）学习笔记（下）—失配树优化</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2026/01/09/520/"><i class="fa  fa-book"></i> 【题解】P14954 520</a>
+            <a class="list-group-item" href="/2026/01/12/10/"><i class="fa  fa-book"></i> 【笔记】AC自动机（ACAM）学习笔记（上）——算法基础</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2025/12/21/%E3%80%90%E6%95%B0%E5%AD%A6%E5%8F%B2%E3%80%91%E7%AC%AC%E4%BA%8C%E6%AC%A1%E6%95%B0%E5%AD%A6%E5%8D%B1%E6%9C%BA%E7%9A%84%E4%BA%A7%E7%94%9F%E5%92%8C%E8%A7%A3%E5%86%B3%EF%BC%8C%E4%B8%8E%E5%BE%AE%E7%A7%AF%E5%88%86%E5%88%9D%E6%AD%A5/"><i class="fa  fa-book"></i> 【数学史】第二次数学危机的产生和解决，与微积分初步</a>
+            <a class="list-group-item" href="/2026/01/09/9/"><i class="fa  fa-book"></i> 【题解】P14954 520</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2025/11/23/Trie%E5%AD%97%E5%85%B8%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><i class="fa  fa-book"></i> 【笔记】Trie字典树学习笔记</a>
+            <a class="list-group-item" href="/2025/12/21/8/"><i class="fa  fa-book"></i> 【数学史】第二次数学危机的产生和解决，与微积分初步</a>
             
           
         
           
           
-            <a class="list-group-item" href="/2025/11/02/2025%E7%AC%AC%E5%9B%9B%E9%A2%98%E3%80%91%E5%A4%9A%E8%BE%B9%E5%BD%A2%EF%BC%88polygon%EF%BC%89%E9%A2%98%E8%A7%A3/"><i class="fa  fa-book"></i> 【CSP-J 2025第四题 题解】多边形（polygon）</a>
+            <a class="list-group-item" href="/2025/11/23/7/"><i class="fa  fa-book"></i> 【笔记】Trie字典树学习笔记</a>
             
           
         
+          
+            
           
             
           
@@ -391,7 +393,7 @@ mjx-container[display="true"] + br {
 
             <article itemscope itemtype="https://schema.org/Article">
     
-    <link itemprop="mainEntityOfPage" href="http://cutezsz.github.io/2025/11/23/Trie%E5%AD%97%E5%85%B8%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">
+    <link itemprop="mainEntityOfPage" href="http://cutezsz.github.io/2025/11/23/7/">
     <div class="kratos-hentry kratos-post-inner clearfix">
         <header class="kratos-entry-header">
             
@@ -414,7 +416,7 @@ mjx-container[display="true"] + br {
                     </li>
                 
                 
-                    <li id="/2025/11/23/Trie%E5%AD%97%E5%85%B8%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" class="leancloud_visitors" data-flag-title="【笔记】Trie字典树学习笔记">
+                    <li id="/2025/11/23/7/" class="leancloud_visitors" data-flag-title="【笔记】Trie字典树学习笔记">
                         <i class="fa fa-eye"></i>
                         <span class="leancloud-visitors-count"> </span> 次阅读
                     </li>
@@ -523,7 +525,7 @@ mjx-container[display="true"] + br {
     <script type="text/javascript">
         $(()=>{
             new QRCode("wechat-qr", {
-                text: "http://cutezsz.github.io/2025/11/23/Trie%E5%AD%97%E5%85%B8%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/",
+                text: "http://cutezsz.github.io/2025/11/23/7/",
                 width: 150,
                 height: 150,
                 correctLevel : QRCode.CorrectLevel.H
@@ -535,7 +537,7 @@ mjx-container[display="true"] + br {
             const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
             const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
             const twitterBase   = "https://twitter.com/intent/tweet?";
-            const hostUrl       = "http://cutezsz.github.io/2025/11/23/Trie%E5%AD%97%E5%85%B8%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/";
+            const hostUrl       = "http://cutezsz.github.io/2025/11/23/7/";
             const title         = "「【笔记】Trie字典树学习笔记」";
             const excerpt       = `引入
 在字符串集合  中查找 模式串 ，我们会使用 字典树 算法来解决形如这样的问题。
@@ -570,12 +572,12 @@ mjx-container[display="true"] + br {
         <nav class="navigation post-navigation clearfix" role="navigation">
             
             <div class="nav-previous clearfix">
-                <a title=" 【CSP-J 2025第四题 题解】多边形（polygon）" href="/2025/11/02/2025第四题】多边形（polygon）题解/">&lt; 上一篇</a>
+                <a title=" 【CSP-J 2025第四题 题解】多边形（polygon）" href="/2025/11/02/6/">&lt; 上一篇</a>
             </div>
             
             
             <div class="nav-next clearfix">
-                <a title=" 【数学史】第二次数学危机的产生和解决，与微积分初步" href="/2025/12/21/【数学史】第二次数学危机的产生和解决，与微积分初步/">下一篇 &gt;</a>
+                <a title=" 【数学史】第二次数学危机的产生和解决，与微积分初步" href="/2025/12/21/8/">下一篇 &gt;</a>
             </div>
             
         </nav>
@@ -591,7 +593,7 @@ mjx-container[display="true"] + br {
                 appKey: 'zLQdxx5UheQSC3jv40ek5s0o',
                 visitor: true,
                 enableQQ: true,
-                path: '/2025/11/23/Trie%E5%AD%97%E5%85%B8%E6%A0%91%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/',
+                path: '/2025/11/23/7/',
                 avatar: 'mp',
                 serverURLs: 'https://nlv43lqm.api.lncldglobal.com',
                 placeholder: '万水千山总是情，发个评论行不行~',
