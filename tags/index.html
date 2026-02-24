@@ -40,7 +40,7 @@
     <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
   
   <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
@@ -71,7 +71,37 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"></head>
 
 
     <body class="custom-background">
@@ -150,7 +180,66 @@
             <div class="container">
                 <div id="main" class="row">
                     
-                        
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <style>
+  .arc-tags {
+    margin-bottom: 8rem;
+  }
+
+  .arc-tags a {
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+    border: 1px solid #fff;
+    border-radius: 15px;
+    margin: 4px 8px 0 0;
+    font-weight: 500;
+    display: inline-block;
+    padding: 0 12px;
+    background: rgba(255, 255, 255, .5);
+    font-size: 16px;
+  }
+
+  .arc-tags a::before {
+    content: "# ";
+    color: #e8a6a6;
+  }
+</style>
+<article>
+  <div class="kratos-hentry kratos-post-inner clearfix">
+    <div class="kratos-post-content">
+      <h2 class="title-h2 text-center">
+        标签聚合
+      </h2>
+      <div style="margin-left: 2em;">
+        <h3 class="archive-page-counter">
+          当前共有 5 个标签 (゜-゜)つロ 干杯~
+        </h3>
+        <div class="tags">
+          
+            <div class="arc-tags">
+              <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a> <a class="tag-none-link" href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" rel="tag">博客日常</a> <a class="tag-none-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a> <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a> <a class="tag-none-link" href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" rel="tag">生活游记</a>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
 
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
@@ -190,7 +279,7 @@
                 标签
             </span>
             <span class="count">
-                14
+                5
             </span>
         </a>
     </div>
@@ -203,7 +292,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%87%A0%E4%BD%95/" style="font-size: 0.6em;">几何</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/" style="font-size: 0.6em;">实变函数</a> <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" style="font-size: 0.65em;">微积分</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.7em;">教程</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.65em;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/" style="font-size: 0.65em;">数学史</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E5%AF%84/" style="font-size: 0.6em;">生活游寄</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.6em;">生活游记</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 0.75em;">笔记</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 0.65em;">题解</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 0.6em;">高等数学</a>
+        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.73em;">数学</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.67em;">生活游记</a>
       </div>
   </aside>
 
@@ -272,66 +361,7 @@
             
     </div>
 </section>
-                    
-
         
-
-            <section class="col-md-8">
-
-        
-
-            <style>
-  .arc-tags {
-    margin-bottom: 8rem;
-  }
-
-  .arc-tags a {
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
-    border: 1px solid #fff;
-    border-radius: 15px;
-    margin: 4px 8px 0 0;
-    font-weight: 500;
-    display: inline-block;
-    padding: 0 12px;
-    background: rgba(255, 255, 255, .5);
-    font-size: 16px;
-  }
-
-  .arc-tags a::before {
-    content: "# ";
-    color: #e8a6a6;
-  }
-</style>
-<article>
-  <div class="kratos-hentry kratos-post-inner clearfix">
-    <div class="kratos-post-content">
-      <h2 class="title-h2 text-center">
-        标签聚合
-      </h2>
-      <div style="margin-left: 2em;">
-        <h3 class="archive-page-counter">
-          当前共有 14 个标签 (゜-゜)つロ 干杯~
-        </h3>
-        <div class="tags">
-          
-            <div class="arc-tags">
-              <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a> <a class="tag-none-link" href="/tags/%E5%87%A0%E4%BD%95/" rel="tag">几何</a> <a class="tag-none-link" href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" rel="tag">博客日常</a> <a class="tag-none-link" href="/tags/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/" rel="tag">实变函数</a> <a class="tag-none-link" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" rel="tag">微积分</a> <a class="tag-none-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a> <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a> <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a> <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/" rel="tag">数学史</a> <a class="tag-none-link" href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E5%AF%84/" rel="tag">生活游寄</a> <a class="tag-none-link" href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" rel="tag">生活游记</a> <a class="tag-none-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a> <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a> <a class="tag-none-link" href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" rel="tag">高等数学</a>
-            </div>
-          
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-
-        
-
-            </section>
-
-        
-
-                
         </div>
     </div>
 </div>
@@ -357,7 +387,7 @@
                     <ul class="kratos-copyright">
                         <div>
                             <li>&copy; 2026 Cute_zsz的小站 版权所有.</li>
-                            <li>主题已经运行<span id="span_dt">Loading...</span></li>
+                            <li>网站已运行<span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
                             <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
@@ -394,6 +424,12 @@
                         <span class="fa fa-snowflake-o"></span>
                     </div>
                 
+                
+                    <div class="box group-box">
+                        <a href="https://qm.qq.com/q/WyYTqDpakq" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
                 
             </div>
             <div class="box gotop-box">
@@ -443,8 +479,6 @@
 
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-    <script defer src="/vendors/layui-src@2.5.5/dist/layui.all.js"></script>
 
 
 

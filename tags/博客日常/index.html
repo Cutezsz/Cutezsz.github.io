@@ -40,7 +40,7 @@
     <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
   
   <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
@@ -71,7 +71,37 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"></head>
 
 
     <body class="custom-background">
@@ -150,7 +180,144 @@
             <div class="container">
                 <div id="main" class="row">
                     
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <!-- Breadcrumb for tag & category page -->
+
+    <article class="kratos-hentry kratos-entry-border-new clearfix">
+        <div class="kratos-breadcrumb">
+            <a href="/">
+                <i class="fa fa-home"></i>
+            </a>
+            <i class="fa fa-angle-right"></i>
+            
+                <a href="/tags/">
+                    标签
+                </a>
+                <i class="fa fa-angle-right"></i>
+                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8">
+                    博客日常
+                </a>
+            
+            
+        </div>
+    </article>
+
+
+
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2025/10/04/1/">
                         
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2025/10/04/1/" itemprop="mainEntityOfPage"><span itemprop="name headline">Hello, Blog！</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                总览
+Hello, Blog!
+我是Cute_zsz，是一名现役OIer，热爱编程、动漫和数学，现在上初二。
+关于我的名字
+Cute_zsz直译来是可爱的zsz（下划线！），zsz是我名字的缩写，Cute一词，来源于我的群友。群友把名...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2025-10-04T06:20:41.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2025-10-04</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" rel="tag">博客日常</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2025/10/04/1/" class="leancloud_visitors" data-flag-title="Hello, Blog！">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2025/10/04/1/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+
+
+
+
+    <div class="hidden">
+        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+        
+            <div id="v-comments" class="post-comments bg-image"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'nLV43lQMFVCNTCbYhjP6lphP-MdYXbMMI',
+                appKey: 'zLQdxx5UheQSC3jv40ek5s0o',
+                visitor: true,
+                enableQQ: true,
+                path: '/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/index.html',
+                avatar: 'mp',
+                serverURLs: 'https://nlv43lqm.api.lncldglobal.com',
+                placeholder: '万水千山总是情，发个评论行不行~',
+            });
+        }
+        if (typeof Valine === 'undefined') {
+            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+        
+    </div>
+
+
+
+        
+
+            </section>
+
+        
+
+                
+            
 
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
@@ -190,7 +357,7 @@
                 标签
             </span>
             <span class="count">
-                14
+                5
             </span>
         </a>
     </div>
@@ -203,7 +370,7 @@
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%87%A0%E4%BD%95/" style="font-size: 0.6em;">几何</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/" style="font-size: 0.6em;">实变函数</a> <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" style="font-size: 0.65em;">微积分</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.7em;">教程</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.65em;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/" style="font-size: 0.65em;">数学史</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E5%AF%84/" style="font-size: 0.6em;">生活游寄</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.6em;">生活游记</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 0.75em;">笔记</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 0.65em;">题解</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 0.6em;">高等数学</a>
+        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.73em;">数学</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.67em;">生活游记</a>
       </div>
   </aside>
 
@@ -272,133 +439,7 @@
             
     </div>
 </section>
-                    
-
         
-
-            <section class="col-md-8">
-
-        
-
-            <!-- Breadcrumb for tag & category page -->
-
-    <article class="kratos-hentry kratos-entry-border-new clearfix">
-        <div class="kratos-breadcrumb">
-            <a href="/">
-                <i class="fa fa-home"></i>
-            </a>
-            <i class="fa fa-angle-right"></i>
-            
-                <a href="/tags/">
-                    标签
-                </a>
-                <i class="fa fa-angle-right"></i>
-                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8">
-                    博客日常
-                </a>
-            
-            
-        </div>
-    </article>
-
-
-
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2025/10/04/1/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2025/10/04/1/" itemprop="mainEntityOfPage"><span itemprop="name headline">Hello, Blog！</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                总览Hello, Blog!我是Cute_zsz，是一名现役OIer，热爱编程、动漫和数学，现在上初二。
-关于我的名字Cute_zsz直译来是可爱的zsz（下划线！），zsz是我名字的缩写，Cute一词，来源于我的群友。群友把名字换成...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2025-10-04T06:20:41.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2025-10-04</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" rel="tag">博客日常</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2025/10/04/1/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-
-
-
-
-    <div class="hidden">
-        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
-        
-            <div id="v-comments" class="post-comments bg-image"></div>
-<script>
-    var load_comm = () => {
-        const init = () => {
-            new Valine({
-                el: '#v-comments',
-                appId: 'nLV43lQMFVCNTCbYhjP6lphP-MdYXbMMI',
-                appKey: 'zLQdxx5UheQSC3jv40ek5s0o',
-                visitor: true,
-                enableQQ: true,
-                path: '/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/index.html',
-                avatar: 'mp',
-                serverURLs: 'https://nlv43lqm.api.lncldglobal.com',
-                placeholder: '万水千山总是情，发个评论行不行~',
-            });
-        }
-        if (typeof Valine === 'undefined') {
-            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
-            $.getScript(src, init);
-        } else {
-            init();
-        }
-    };
-</script>
-<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
-        
-    </div>
-
-
-
-        
-
-            </section>
-
-        
-
-                
         </div>
     </div>
 </div>
@@ -424,7 +465,7 @@
                     <ul class="kratos-copyright">
                         <div>
                             <li>&copy; 2026 Cute_zsz的小站 版权所有.</li>
-                            <li>主题已经运行<span id="span_dt">Loading...</span></li>
+                            <li>网站已运行<span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
                             <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
@@ -461,6 +502,12 @@
                         <span class="fa fa-snowflake-o"></span>
                     </div>
                 
+                
+                    <div class="box group-box">
+                        <a href="https://qm.qq.com/q/WyYTqDpakq" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
                 
             </div>
             <div class="box gotop-box">
@@ -510,8 +557,6 @@
 
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-    <script defer src="/vendors/layui-src@2.5.5/dist/layui.all.js"></script>
 
 
 

@@ -40,7 +40,7 @@
     <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
   
   <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
@@ -71,7 +71,37 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"></head>
 
 
     <body class="custom-background">
@@ -240,7 +270,7 @@
                     <ul class="kratos-copyright">
                         <div>
                             <li>&copy; 2026 Cute_zsz的小站 版权所有.</li>
-                            <li>主题已经运行<span id="span_dt">Loading...</span></li>
+                            <li>网站已运行<span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
                             <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
@@ -277,6 +307,12 @@
                         <span class="fa fa-snowflake-o"></span>
                     </div>
                 
+                
+                    <div class="box group-box">
+                        <a href="https://qm.qq.com/q/WyYTqDpakq" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
                 
             </div>
             <div class="box gotop-box">

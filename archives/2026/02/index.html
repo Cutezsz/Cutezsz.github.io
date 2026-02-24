@@ -40,7 +40,7 @@
     <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
   
   <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
@@ -71,7 +71,37 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head>
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"></head>
 
 
     <body class="custom-background">
@@ -149,129 +179,6 @@
         <div id="kratos-blog-post">
             <div class="container">
                 <div id="main" class="row">
-                    
-                        
-
-<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
-    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
-    
-        <div class="sticky-area">
-    
-    
-                <aside id="krw-about" class="widget widget-kratos-about clearfix">
-    <div class="photo-background"></div>
-    <div class="photo-wrapper clearfix">
-        <div class="photo-wrapper-tip text-center">
-            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
-        </div>
-    </div>
-    <div class="textwidget">
-        <p class="text-center"></p>
-    </div>
-    <div class="site-meta">
-        <a class="meta-item" href="/archives/">
-            <span class="title">
-                文章
-            </span>
-            <span class="count">
-                15
-            </span>
-        </a>
-        <a class="meta-item" href="/categories/">
-            <span class="title">
-                分类
-            </span>
-            <span class="count">
-                0
-            </span>
-        </a>
-        <a class="meta-item" href="/tags/">
-            <span class="title">
-                标签
-            </span>
-            <span class="count">
-                14
-            </span>
-        </a>
-    </div>
-</aside>
-            
-                
-
-            
-                
-  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
-    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
-      <div class="tag-clouds">
-        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%87%A0%E4%BD%95/" style="font-size: 0.6em;">几何</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/" style="font-size: 0.6em;">实变函数</a> <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" style="font-size: 0.65em;">微积分</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.7em;">教程</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.65em;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/" style="font-size: 0.65em;">数学史</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E5%AF%84/" style="font-size: 0.6em;">生活游寄</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.6em;">生活游记</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 0.75em;">笔记</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 0.65em;">题解</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 0.6em;">高等数学</a>
-      </div>
-  </aside>
-
-            
-                
-  <aside id="krw-posts" class="widget widget-kratos-posts">
-  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
-  <div class="tab-content">
-      <ul class="list-group">
-        
-        
-          
-          
-            <a class="list-group-item" href="/2026/02/23/15/"><i class="fa  fa-book"></i> 【笔记】状压dp学习笔记</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2026/02/06/14/"><i class="fa  fa-book"></i> 【数学史】几何学的革命</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2026/01/30/13/"><i class="fa  fa-book"></i> 【数学】实变函数，第三次数学危机，与波涛汹涌的数学</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2026/01/25/12/"><i class="fa  fa-book"></i> 【题解】P2292 [HNOI2004] L语言</a>
-            
-          
-        
-          
-          
-            <a class="list-group-item" href="/2026/01/24/11/"><i class="fa  fa-book"></i> 【笔记】AC自动机（ACAM）学习笔记（下）—失配树优化</a>
-            
-          
-        
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-          
-            
-      </ul>
-  </div>
-  </aside>
-
-            
-    </div>
-</section>
                     
 
         
@@ -381,6 +288,129 @@
         
 
                 
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+        <div class="sticky-area">
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center"></p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                15
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                0
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                5
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.73em;">数学</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.67em;">生活游记</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/2026/02/23/15/"><i class="fa  fa-book"></i> 【笔记】状压dp学习笔记</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/02/06/14/"><i class="fa  fa-book"></i> 【数学史】几何学的革命</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/01/30/13/"><i class="fa  fa-book"></i> 【数学】实变函数，第三次数学危机，与波涛汹涌的数学</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/01/25/12/"><i class="fa  fa-book"></i> 【题解】P2292 [HNOI2004] L语言</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/2026/01/24/11/"><i class="fa  fa-book"></i> 【笔记】AC自动机（ACAM）学习笔记（下）—失配树优化</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
         </div>
     </div>
 </div>
@@ -406,7 +436,7 @@
                     <ul class="kratos-copyright">
                         <div>
                             <li>&copy; 2026 Cute_zsz的小站 版权所有.</li>
-                            <li>主题已经运行<span id="span_dt">Loading...</span></li>
+                            <li>网站已运行<span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
                             <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
@@ -443,6 +473,12 @@
                         <span class="fa fa-snowflake-o"></span>
                     </div>
                 
+                
+                    <div class="box group-box">
+                        <a href="https://qm.qq.com/q/WyYTqDpakq" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
                 
             </div>
             <div class="box gotop-box">
@@ -492,8 +528,6 @@
 
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-    <script defer src="/vendors/layui-src@2.5.5/dist/layui.all.js"></script>
 
 
 

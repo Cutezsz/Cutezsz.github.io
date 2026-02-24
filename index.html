@@ -40,7 +40,7 @@
     <script src="/js/kr-dark.min.js"></script>
   
   
-    <link rel="stylesheet" id="highlight-css" href="/css/highlight/night-eighties.min.css" media="all"></script>
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
   
   <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
@@ -71,7 +71,37 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"><style>mjx-container[jax="SVG"] {
   direction: ltr;
 }
 
@@ -262,7 +292,685 @@ mjx-container[display="true"] + br {
             <div class="container">
                 <div id="main" class="row">
                     
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <!-- Breadcrumb for tag & category page -->
+
+
+
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2026/02/23/15/">
                         
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2026/02/23/15/" itemprop="mainEntityOfPage"><span itemprop="name headline">【笔记】状压dp学习笔记</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                认认真真地写介绍语，力求讲明白状压dp！
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2026-02-23T12:14:24.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2026-02-23</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2026/02/23/15/" class="leancloud_visitors" data-flag-title="【笔记】状压dp学习笔记">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2026/02/23/15/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2026/02/06/14/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2026/02/06/14/" itemprop="mainEntityOfPage"><span itemprop="name headline">【数学史】几何学的革命</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                哥尼斯堡七桥问题
+问题引入
+图论，作为平等折磨每一位OIer的数学领域，是由莱昂哈德·欧拉（Leonhard Euler）于1736年，作为对 哥尼斯堡七桥问题 的研究提出的。
+欧拉可不是一般人，出身牧师家庭，父亲的熏陶使他喜爱上了数...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2026-02-06T02:30:59.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2026-02-06</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2026/02/06/14/" class="leancloud_visitors" data-flag-title="【数学史】几何学的革命">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2026/02/06/14/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2026/01/30/13/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2026/01/30/13/" itemprop="mainEntityOfPage"><span itemprop="name headline">【数学】实变函数，第三次数学危机，与波涛汹涌的数学</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                注意 ：本文仅为初步科普，仅能做到较为严谨以保证可读性，如需追求严谨请参考相关教材。本文意在揭示现代数学反常识的共性，相信读者看完后定会有所收获。
+扩充
+还没看过 这篇文章 的读者可以先浏览一下。
+下面补充 不定积分 的定义：
+定义1...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2026-01-30T08:00:00.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2026-01-30</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2026/01/30/13/" class="leancloud_visitors" data-flag-title="【数学】实变函数，第三次数学危机，与波涛汹涌的数学">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2026/01/30/13/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2026/01/25/12/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2026/01/25/12/" itemprop="mainEntityOfPage"><span itemprop="name headline">【题解】P2292 [HNOI2004] L语言</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                题目传送门：here.
+题意
+给  个模式串组成的集合 , 再给  个文本串 , 求  最长前缀  的长度，使得我们把  分成若干个子串，这些子串都在  中。
+思路
+观察标签，明显可以看到：AC自动机、状压dp.
+但是注意到AC自动机...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2026-01-25T03:27:28.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2026-01-25</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2026/01/25/12/" class="leancloud_visitors" data-flag-title="【题解】P2292 [HNOI2004] L语言">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2026/01/25/12/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2026/01/24/11/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2026/01/24/11/" itemprop="mainEntityOfPage"><span itemprop="name headline">【笔记】AC自动机（ACAM）学习笔记（下）—失配树优化</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                你需要学习的
+请看本文的上篇：here
+回忆
+在AC自动机的上篇，我们学习了AC自动机的基本思路。观察下面代码：
+12345678910111213141516ll query(string s){    ll p = 0, ans ...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2026-01-23T16:00:30.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2026-01-24</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2026/01/24/11/" class="leancloud_visitors" data-flag-title="【笔记】AC自动机（ACAM）学习笔记（下）—失配树优化">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2026/01/24/11/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2026/01/12/10/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2026/01/12/10/" itemprop="mainEntityOfPage"><span itemprop="name headline">【笔记】AC自动机（ACAM）学习笔记（上）——算法基础</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                她可不是自动AC机，前者是算法，后者就是作弊了。
+前置知识
+你至少应该掌握以下算法，以下会跳转到我之前写的笔记。
+KMP算法
+字典树（Trie）
+简介
+AC自动机（Aho-Corasick Automaton）是基于Tire树，并结合...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2026-01-12T12:38:22.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2026-01-12</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2026/01/12/10/" class="leancloud_visitors" data-flag-title="【笔记】AC自动机（ACAM）学习笔记（上）——算法基础">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2026/01/12/10/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2026/01/09/9/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2026/01/09/9/" itemprop="mainEntityOfPage"><span itemprop="name headline">【题解】P14954 520</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                更好的阅读体验：here
+题目传送门：here
+明晰
+长度为  的字符串 ，可以添加  个 ， 个 ， 个 ，现在求修改后字符串中 连续 的  串的数量。 （本蒟蒻最初读假题了）
+思路
+正解应为贪心，思考三种情况：
+
+当前  串是完整...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2026-01-09T13:22:13.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2026-01-09</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2026/01/09/9/" class="leancloud_visitors" data-flag-title="【题解】P14954 520">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2026/01/09/9/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2025/12/21/8/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2025/12/21/8/" itemprop="mainEntityOfPage"><span itemprop="name headline">【数学史】第二次数学危机的产生和解决，与微积分初步</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                问题引入
+在经典力学中，我们是用以下方法求瞬时速度的：
+对于位移  ，定义  为位移的增量， 为时间的增量，则  为当前的速度，当  趋近无穷小时，上式即为当前的瞬时速度。
+顺着这样的思路，如果我们要求函数  在某一点（）处的“瞬时速...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2025-12-21T00:24:32.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2025-12-21</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2025/12/21/8/" class="leancloud_visitors" data-flag-title="【数学史】第二次数学危机的产生和解决，与微积分初步">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2025/12/21/8/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2025/11/23/7/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2025/11/23/7/" itemprop="mainEntityOfPage"><span itemprop="name headline">【笔记】Trie字典树学习笔记</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                引入
+在字符串集合  中查找 模式串 ，我们会使用 字典树 算法来解决形如这样的问题。
+字典树（以下简称Trie）是一棵多叉树，为处理字符串而生，若使用红黑树等算法解决上述问题，则时间复杂度为 ，其中 ，这是因为比较两字符串是否相同仍...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2025-11-23T12:18:17.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2025-11-23</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2025/11/23/7/" class="leancloud_visitors" data-flag-title="【笔记】Trie字典树学习笔记">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2025/11/23/7/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+    
+    
+        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
+            <div class="kratos-entry-border-new clearfix">
+                
+                <div class="kratos-entry-thumb-new">
+                    <a href="/2025/11/02/6/">
+                        
+                            <img class="kratos-entry-thumb-new-img" alt="">
+                        
+                    </a>
+                </div>
+                <div class="kratos-post-inner-new">
+                    <header class="kratos-entry-header-new">
+                            
+                        <h2 class="kratos-entry-title-new"><a href="/2025/11/02/6/" itemprop="mainEntityOfPage"><span itemprop="name headline">【CSP-J 2025第四题 题解】多边形（polygon）</span></a>
+                    </header>
+                    <div class="kratos-entry-content-new">
+                        <p itemProp="description">
+                            
+                                更好的阅读体验：https://cutezsz.github.io/2025/11/02/6/
+题意
+传送门：https://www.luogu.com.cn/problem/P14360
+题目描述
+小 R 喜欢玩小木棍。小 R 有 ...
+                            
+                        </p>
+                    </div>
+                </div>
+                <footer class="kratos-post-meta-new">
+                    <span class="pull-left">
+                        <time datetime="2025-11-02T08:43:51.000Z" itemprop="datePublished">
+                            <a><i class="fa fa-calendar"></i> 2025-11-02</a>
+                        </time>
+                        <a>
+                            
+                                <i class="fa fa-tags"></i>
+                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>
+                            
+                        </a>
+                        
+                            <!-- 当前仅支持valine/waline自带的统计功能 -->
+                            
+                                <a id="/2025/11/02/6/" class="leancloud_visitors" data-flag-title="【CSP-J 2025第四题 题解】多边形（polygon）">
+                                    <i class="fa fa-eye"></i>
+                                    <span class="leancloud-visitors-count"> </span> 次阅读
+                                </a>
+                            
+                        
+                        
+                            <!-- 当前仅支持waline自带的统计功能 -->
+                            
+                        
+                    </span>
+                    <span class="pull-right">
+                        <a class="read-more" href="/2025/11/02/6/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
+                    </span>
+                </footer>
+            </div>
+        </article>
+    
+
+
+
+    <div class='text-center pagination'>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    </div>
+
+
+
+    <div class="hidden">
+        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
+        
+            <div id="v-comments" class="post-comments bg-image"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'nLV43lQMFVCNTCbYhjP6lphP-MdYXbMMI',
+                appKey: 'zLQdxx5UheQSC3jv40ek5s0o',
+                visitor: true,
+                enableQQ: true,
+                path: '/index.html',
+                avatar: 'mp',
+                serverURLs: 'https://nlv43lqm.api.lncldglobal.com',
+                placeholder: '万水千山总是情，发个评论行不行~',
+            });
+        }
+        if (typeof Valine === 'undefined') {
+            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+        
+    </div>
+
+
+
+        
+
+            </section>
+
+        
+
+                
+            
 
 <section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
     <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
@@ -302,7 +1010,7 @@ mjx-container[display="true"] + br {
                 标签
             </span>
             <span class="count">
-                14
+                5
             </span>
         </a>
     </div>
@@ -315,7 +1023,7 @@ mjx-container[display="true"] + br {
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%87%A0%E4%BD%95/" style="font-size: 0.6em;">几何</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/" style="font-size: 0.6em;">实变函数</a> <a href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" style="font-size: 0.65em;">微积分</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 0.7em;">教程</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.65em;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/" style="font-size: 0.65em;">数学史</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E5%AF%84/" style="font-size: 0.6em;">生活游寄</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.6em;">生活游记</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 0.75em;">笔记</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 0.65em;">题解</a> <a href="/tags/%E9%AB%98%E7%AD%89%E6%95%B0%E5%AD%A6/" style="font-size: 0.6em;">高等数学</a>
+        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.73em;">数学</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.67em;">生活游记</a>
       </div>
   </aside>
 
@@ -384,585 +1092,7 @@ mjx-container[display="true"] + br {
             
     </div>
 </section>
-                    
-
         
-
-            <section class="col-md-8">
-
-        
-
-            <!-- Breadcrumb for tag & category page -->
-
-
-
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/02/23/15/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2026/02/23/15/" itemprop="mainEntityOfPage"><span itemprop="name headline">【笔记】状压dp学习笔记</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                好久没更新了，寒假都颓废了，所以滚回来更新了（哈欠）
-问题引入考虑 下面的问题 ，在一个  的棋盘中放  个国王，互不攻击。国王可以攻击其八个方向，求摆放方案数。其中  ，  .
-思路设置状态数据规模非常小，同时这样的方案数问题我们很...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-02-23T12:14:24.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-02-23</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/02/23/15/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/02/06/14/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2026/02/06/14/" itemprop="mainEntityOfPage"><span itemprop="name headline">【数学史】几何学的革命</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                哥尼斯堡七桥问题问题引入图论，作为平等折磨每一位OIer的数学领域，是由莱昂哈德·欧拉（Leonhard Euler）于1736年，作为对 哥尼斯堡七桥问题 的研究提出的。
-欧拉可不是一般人，出身牧师家庭，父亲的熏陶使他喜爱上了数学，...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-02-06T02:30:59.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-02-06</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%87%A0%E4%BD%95/" rel="tag">几何</a>, <a class="tag-none-link" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" rel="tag">微积分</a>, <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/02/06/14/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/01/30/13/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2026/01/30/13/" itemprop="mainEntityOfPage"><span itemprop="name headline">【数学】实变函数，第三次数学危机，与波涛汹涌的数学</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                注意 ：本文仅为初步科普，仅能做到较为严谨以保证可读性，如需追求严谨请参考相关教材。本文意在揭示现代数学反常识的共性，相信读者看完后定会有所收获。
-扩充还没看过 这篇文章 的读者可以先浏览一下。下面补充 不定积分 的定义：定义1：若函...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-01-30T08:00:00.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-01-30</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%AE%9E%E5%8F%98%E5%87%BD%E6%95%B0/" rel="tag">实变函数</a>, <a class="tag-none-link" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" rel="tag">微积分</a>, <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/01/30/13/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/01/25/12/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2026/01/25/12/" itemprop="mainEntityOfPage"><span itemprop="name headline">【题解】P2292 [HNOI2004] L语言</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                题目传送门：here.
-题意给  个模式串组成的集合 , 再给  个文本串 , 求  最长前缀  的长度，使得我们把  分成若干个子串，这些子串都在  中。
-思路观察标签，明显可以看到：AC自动机、状压dp.但是注意到AC自动机没啥思...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-01-25T03:27:28.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-01-25</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/01/25/12/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/01/24/11/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2026/01/24/11/" itemprop="mainEntityOfPage"><span itemprop="name headline">【笔记】AC自动机（ACAM）学习笔记（下）—失配树优化</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                你需要学习的请看本文的上篇：here
-回忆在AC自动机的上篇，我们学习了AC自动机的基本思路。观察下面代码：
-12345678910111213141516ll query(string s){    ll p = 0, ans = ...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-01-23T16:00:30.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-01-24</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>, <a class="tag-none-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/01/24/11/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/01/12/10/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2026/01/12/10/" itemprop="mainEntityOfPage"><span itemprop="name headline">【笔记】AC自动机（ACAM）学习笔记（上）——算法基础</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                她可不是自动AC机，前者是算法，后者就是作弊了。
-前置知识你至少应该掌握以下算法，以下会跳转到我之前写的笔记。KMP算法字典树（Trie）
-简介AC自动机（Aho-Corasick Automaton）是基于Tire树，并结合KMP算...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-01-12T12:38:22.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-01-12</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>, <a class="tag-none-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/01/12/10/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2026/01/09/9/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2026/01/09/9/" itemprop="mainEntityOfPage"><span itemprop="name headline">【题解】P14954 520</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                更好的阅读体验：here题目传送门：here
-明晰长度为  的字符串 ，可以添加  个 ， 个 ， 个 ，现在求修改后字符串中 连续 的  串的数量。 （本蒟蒻最初读假题了）
-思路正解应为贪心，思考三种情况：
-
-当前  串是完整的，那...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2026-01-09T13:22:13.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2026-01-09</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2026/01/09/9/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2025/12/21/8/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2025/12/21/8/" itemprop="mainEntityOfPage"><span itemprop="name headline">【数学史】第二次数学危机的产生和解决，与微积分初步</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                问题引入在经典力学中，我们是用以下方法求瞬时速度的：对于位移  ，定义  为位移的增量， 为时间的增量，则  为当前的速度，当  趋近无穷小时，上式即为当前的瞬时速度。
-顺着这样的思路，如果我们要求函数  在某一点（）处的“瞬时速度”...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2025-12-21T00:24:32.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2025-12-21</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E5%BE%AE%E7%A7%AF%E5%88%86/" rel="tag">微积分</a>, <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6/" rel="tag">数学</a>, <a class="tag-none-link" href="/tags/%E6%95%B0%E5%AD%A6%E5%8F%B2/" rel="tag">数学史</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2025/12/21/8/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2025/11/23/7/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2025/11/23/7/" itemprop="mainEntityOfPage"><span itemprop="name headline">【笔记】Trie字典树学习笔记</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                引入在字符串集合  中查找 模式串 ，我们会使用 字典树 算法来解决形如这样的问题。
-字典树（以下简称Trie）是一棵多叉树，为处理字符串而生，若使用红黑树等算法解决上述问题，则时间复杂度为 ，其中 ，这是因为比较两字符串是否相同仍需...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2025-11-23T12:18:17.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2025-11-23</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>, <a class="tag-none-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a>, <a class="tag-none-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2025/11/23/7/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-    
-    
-        <article class="kratos-hentry clearfix" itemscope itemtype="https://schema.org/Article">
-            <div class="kratos-entry-border-new clearfix">
-                
-                <div class="kratos-entry-thumb-new">
-                    <a href="/2025/11/02/6/">
-                        
-                            <img class="kratos-entry-thumb-new-img" alt="">
-                        
-                    </a>
-                </div>
-                <div class="kratos-post-inner-new">
-                    <header class="kratos-entry-header-new">
-                            
-                        <h2 class="kratos-entry-title-new"><a href="/2025/11/02/6/" itemprop="mainEntityOfPage"><span itemprop="name headline">【CSP-J 2025第四题 题解】多边形（polygon）</span></a>
-                    </header>
-                    <div class="kratos-entry-content-new">
-                        <p itemProp="description">
-                            
-                                更好的阅读体验：https://cutezsz.github.io/2025/11/02/6/
-题意传送门：https://www.luogu.com.cn/problem/P14360
-题目描述小 R 喜欢玩小木棍。小 R 有  根...
-                            
-                        </p>
-                    </div>
-                </div>
-                <footer class="kratos-post-meta-new">
-                    <span class="pull-left">
-                        <time datetime="2025-11-02T08:43:51.000Z" itemprop="datePublished">
-                            <a><i class="fa fa-calendar"></i> 2025-11-02</a>
-                        </time>
-                        <a>
-                            
-                                <i class="fa fa-tags"></i>
-                                <a class="tag-none-link" href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" rel="tag">信息学奥赛</a>, <a class="tag-none-link" href="/tags/%E9%A2%98%E8%A7%A3/" rel="tag">题解</a>
-                            
-                        </a>
-                        
-                        
-                            <!-- 当前仅支持waline自带的统计功能 -->
-                            
-                        
-                    </span>
-                    <span class="pull-right">
-                        <a class="read-more" href="/2025/11/02/6/" title="阅读全文">阅读全文<i class="fa fa-chevron-circle-right"></i></a>
-                    </span>
-                </footer>
-            </div>
-        </article>
-    
-
-
-
-    <div class='text-center pagination'>
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right"></i></a>
-    </div>
-
-
-
-    <div class="hidden">
-        <!-- 加载文章阅读对应的统计功能，评论自带的那种 -->
-        
-            <div id="v-comments" class="post-comments bg-image"></div>
-<script>
-    var load_comm = () => {
-        const init = () => {
-            new Valine({
-                el: '#v-comments',
-                appId: 'nLV43lQMFVCNTCbYhjP6lphP-MdYXbMMI',
-                appKey: 'zLQdxx5UheQSC3jv40ek5s0o',
-                visitor: true,
-                enableQQ: true,
-                path: '/index.html',
-                avatar: 'mp',
-                serverURLs: 'https://nlv43lqm.api.lncldglobal.com',
-                placeholder: '万水千山总是情，发个评论行不行~',
-            });
-        }
-        if (typeof Valine === 'undefined') {
-            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
-            $.getScript(src, init);
-        } else {
-            init();
-        }
-    };
-</script>
-<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
-        
-    </div>
-
-
-
-        
-
-            </section>
-
-        
-
-                
         </div>
     </div>
 </div>
@@ -988,7 +1118,7 @@ mjx-container[display="true"] + br {
                     <ul class="kratos-copyright">
                         <div>
                             <li>&copy; 2026 Cute_zsz的小站 版权所有.</li>
-                            <li>主题已经运行<span id="span_dt">Loading...</span></li>
+                            <li>网站已运行<span id="span_dt">Loading...</span></li>
                         </div>
                         <div>
                             <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
@@ -1025,6 +1155,12 @@ mjx-container[display="true"] + br {
                         <span class="fa fa-snowflake-o"></span>
                     </div>
                 
+                
+                    <div class="box group-box">
+                        <a href="https://qm.qq.com/q/WyYTqDpakq" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
                 
             </div>
             <div class="box gotop-box">
@@ -1074,8 +1210,6 @@ mjx-container[display="true"] + br {
 
 <script defer src="/js/kratosr.min.js"></script>
 <script defer src="/js/pjax.min.js"></script>
-
-    <script defer src="/vendors/layui-src@2.5.5/dist/layui.all.js"></script>
 
 
 
