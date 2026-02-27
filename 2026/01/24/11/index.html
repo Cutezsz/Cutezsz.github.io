@@ -242,7 +242,7 @@ mjx-container[display="true"] + br {
                                         
                                     
                                         
-                                            <li><a href="/friends/"><i class="fa fa-paw"></i>友情链接</a></li>
+                                            <li><a href="/friends/"><i class="fa fa-paw"></i>推荐浏览</a></li>
                                         
                                     
                                         
@@ -393,7 +393,7 @@ mjx-container[display="true"] + br {
                 </div>
             
             <hr />
-            <div itemprop="articleBody"><h1 id="你需要学习的"><a href="#你需要学习的" class="headerlink" title="你需要学习的"></a>你需要学习的</h1><p>请看本文的上篇：<a href="https://cutezsz.github.io/2026/01/12/10/">here</a></p>
+            <div itemprop="articleBody"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="你需要学习的"><a href="#你需要学习的" class="headerlink" title="你需要学习的"></a>你需要学习的</h1><p>请看本文的上篇：<a href="https://cutezsz.github.io/2026/01/12/10/">here</a></p>
 <h1 id="回忆"><a href="#回忆" class="headerlink" title="回忆"></a>回忆</h1><p>在AC自动机的上篇，我们学习了AC自动机的基本思路。观察下面代码：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ll <span class="title">query</span><span class="params">(string s)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    ll p = <span class="number">0</span>, ans = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">auto</span> i : s)</span><br><span class="line">    {</span><br><span class="line">        ll ch = i - <span class="string">'a'</span> + <span class="number">1</span>;</span><br><span class="line">        p = tr[p][ch];</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (ll j = p; j &amp;&amp; ed[j] != <span class="number">-1</span>; j = fail[j]) {     </span><br><span class="line">            ans += ed[j], ed[j] = <span class="number">-1</span>;       </span><br><span class="line">        }</span><br><span class="line">    }</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
@@ -585,7 +585,7 @@ mjx-container[display="true"] + br {
                 文章
             </span>
             <span class="count">
-                16
+                17
             </span>
         </a>
         <a class="meta-item" href="/categories/">
@@ -601,7 +601,7 @@ mjx-container[display="true"] + br {
                 标签
             </span>
             <span class="count">
-                5
+                7
             </span>
         </a>
     </div>
@@ -624,7 +624,7 @@ mjx-container[display="true"] + br {
                 
   <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
     <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AB%9E%E8%B5%9B/">竞赛</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="category-list-count">1</span></li></ul>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a><span class="category-list-count">4</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AB%9E%E8%B5%9B/">竞赛</a><span class="category-list-count">11</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="category-list-count">1</span></li></ul>
   </aside>
 
 
@@ -633,7 +633,7 @@ mjx-container[display="true"] + br {
   <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
     <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
       <div class="tag-clouds">
-        <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.73em;">数学</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.67em;">生活游记</a>
+        <a href="/tags/%E4%BD%93%E8%82%B2/" style="font-size: 0.6em;">体育</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.73em;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" style="font-size: 0.6em;">数学建模</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.67em;">生活游记</a>
       </div>
   </aside>
 
@@ -644,6 +644,12 @@ mjx-container[display="true"] + br {
   <div class="tab-content">
       <ul class="list-group">
         
+        
+          
+          
+            <a class="list-group-item" href="/2026/02/27/17/"><i class="fa  fa-book"></i> 【数学建模】体测逃课小妙招</a>
+            
+          
         
           
           
@@ -670,11 +676,7 @@ mjx-container[display="true"] + br {
           
         
           
-          
-            <a class="list-group-item" href="/2026/01/25/12/"><i class="fa  fa-book"></i> 【题解】P2292 [HNOI2004] L语言</a>
             
-          
-        
           
             
           
