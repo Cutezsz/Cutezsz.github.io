@@ -54,8 +54,6 @@
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
-  
   
     <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
@@ -438,7 +436,7 @@ p.spoiler {
     </div>
 </div>
 <footer>
-    <div id="footer"  class="ap-lrc"  >
+    <div id="footer"  >
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 footer-list text-center">
@@ -472,9 +470,9 @@ p.spoiler {
                             <li>
                                 <a target="_blank" rel="nofollow" href="https://www.luogu.com.cn/user/1065628">
                                     <img src="images/footer_icon/luogu.png" 
-                                        style="width: 2.25em; height: 3em; vertical-align: middle; filter: brightness(0.6); transition: filter 0.3s ease;" 
-                                        onmouseover="this.style.filter='brightness(0.65) sepia(1) hue-rotate(180deg) saturate(3)'" 
-                                        onmouseout="this.style.filter='brightness(0.65)'"
+                                        style="width: 2.25em; height: 3em; vertical-align: middle; filter: grayscale(100%); transition: filter 0.3s ease;" 
+                                        onmouseover="this.style.filter='grayscale(0%)'" 
+                                        onmouseout="this.style.filter='grayscale(100%)'"
                                         alt="Luogu">
                                 </a>
                             </li>
@@ -527,10 +525,6 @@ p.spoiler {
                     </div>
                 
                 
-                    <div class="box theme-box" id="snow-switch">
-                        <span class="fa fa-snowflake-o"></span>
-                    </div>
-                
                 
                     <div class="box group-box">
                         <a href="https://qm.qq.com/q/WyYTqDpakq" target="_blank" rel="nofollow">
@@ -558,27 +552,9 @@ p.spoiler {
     window.kr.siteRoot = "/";
 </script>
 
-    <div>
-        <canvas id="snow"></canvas>
-        <script async src="/js/snow.min.js"></script>
-    </div>
-
 
     <script async src="/js/candy.min.js"></script>
 
-
-
-    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    
-    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
-    <meting-js
-        server="netease"
-        type="playlist"
-        id="13311136605"
-        order="random"
-        fixed="true"
-    >
-    </meting-js>
 
 
 

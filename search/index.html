@@ -54,8 +54,6 @@
   <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
   
   
-    <link rel="stylesheet" href="/vendors/aplayer@1.10.1/dist/APlayer.min.css"></script>
-  
   
     <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
   
@@ -211,7 +209,7 @@ p.spoiler {
             <p>搜索多个关键词时请用空格分割，例如「博客日常 信息学奥赛 笔记」这样；</p>
             <p>您也可以使用这些标签碰碰运气哦~</p>
             <p class="search-demo-tags">
-                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 18px; color: #b2b7be">博客日常</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 24px; color: #6c7588">信息学奥赛</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 22px; color: #838b9a">笔记</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 22px; color: #838b9a">题解</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 22px; color: #838b9a">数学</a> <a href="/tags/%E4%BD%93%E8%82%B2/" style="font-size: 18px; color: #b2b7be">体育</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" style="font-size: 18px; color: #b2b7be">数学建模</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 20px; color: #9ba1ac">生活游记</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 18px; color: #b2b7be">技术</a> <a href="/tags/%E8%87%AA%E4%BB%8B/" style="font-size: 18px; color: #b2b7be">自介</a>
+                <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 18px; color: #b2b7be">博客日常</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 24px; color: #6c7588">信息学奥赛</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 22px; color: #838b9a">笔记</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 22px; color: #838b9a">题解</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 22px; color: #838b9a">数学</a> <a href="/tags/%E4%BD%93%E8%82%B2/" style="font-size: 18px; color: #b2b7be">体育</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" style="font-size: 18px; color: #b2b7be">数学建模</a> <a href="/tags/%E8%87%AA%E4%BB%8B/" style="font-size: 18px; color: #b2b7be">自介</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 20px; color: #9ba1ac">生活游记</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 18px; color: #b2b7be">技术</a>
             </p>
         </div>
     </div>
@@ -369,7 +367,7 @@ p.spoiler {
     </div>
 </div>
 <footer>
-    <div id="footer"  class="ap-lrc"  >
+    <div id="footer"  >
         <div class="container">
             <div class="row">
                 <div class="col-md-6 col-md-offset-3 footer-list text-center">
@@ -403,9 +401,9 @@ p.spoiler {
                             <li>
                                 <a target="_blank" rel="nofollow" href="https://www.luogu.com.cn/user/1065628">
                                     <img src="images/footer_icon/luogu.png" 
-                                        style="width: 2.25em; height: 3em; vertical-align: middle; filter: brightness(0.6); transition: filter 0.3s ease;" 
-                                        onmouseover="this.style.filter='brightness(0.65) sepia(1) hue-rotate(180deg) saturate(3)'" 
-                                        onmouseout="this.style.filter='brightness(0.65)'"
+                                        style="width: 2.25em; height: 3em; vertical-align: middle; filter: grayscale(100%); transition: filter 0.3s ease;" 
+                                        onmouseover="this.style.filter='grayscale(0%)'" 
+                                        onmouseout="this.style.filter='grayscale(100%)'"
                                         alt="Luogu">
                                 </a>
                             </li>
@@ -458,10 +456,6 @@ p.spoiler {
                     </div>
                 
                 
-                    <div class="box theme-box" id="snow-switch">
-                        <span class="fa fa-snowflake-o"></span>
-                    </div>
-                
                 
                     <div class="box group-box">
                         <a href="https://qm.qq.com/q/WyYTqDpakq" target="_blank" rel="nofollow">
@@ -489,27 +483,9 @@ p.spoiler {
     window.kr.siteRoot = "/";
 </script>
 
-    <div>
-        <canvas id="snow"></canvas>
-        <script async src="/js/snow.min.js"></script>
-    </div>
-
 
     <script async src="/js/candy.min.js"></script>
 
-
-
-    <script defer src="/vendors/aplayer@1.10.1/dist/APlayer.min.js"></script>
-    
-    <script defer src="/vendors/meting@2.0.1/dist/Meting.min.js"></script>
-    <meting-js
-        server="netease"
-        type="playlist"
-        id="13311136605"
-        order="random"
-        fixed="true"
-    >
-    </meting-js>
 
 
 
