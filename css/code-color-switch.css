@@ -1,0 +1,54 @@
+/* 暗色模式下的代码块样式覆盖 */
+@media (prefers-color-scheme: dark) {
+    figure.highlight {
+        background: #282a2e !important;
+        color: #c5c8c6 !important;
+    }
+    
+    figure.highlight .gutter pre {
+        background-color: #000 !important;
+        color: #888f96 !important;
+    }
+    
+    figure.highlight .code {
+        background-color: #1d1f21 !important;
+    }
+    
+    /* 代码高亮颜色 */
+    pre .comment { color: #969896 !important; }
+    pre .keyword { color: #b294bb !important; }
+    pre .string { color: #b5bd68 !important; }
+    pre .number { color: #de935f !important; }
+    pre .title { color: #8abeb7 !important; }
+    pre .attribute { color: #de935f !important; }
+    pre .function { color: #81a2be !important; }
+    pre .built_in { color: #de935f !important; }
+    pre .class { color: #b294bb !important; }
+    pre .variable { color: #c66 !important; }
+    pre .tag { color: #c66 !important; }
+    pre .value { color: #b5bd68 !important; }
+    pre .regexp { color: #8abeb7 !important; }
+    pre .symbol { color: #b294bb !important; }
+    pre .constant { color: #de935f !important; }
+    pre .params { color: #de935f !important; }
+    pre .section { color: #81a2be !important; }
+    pre .meta { color: #b294bb !important; }
+    pre .selector-tag { color: #c66 !important; }
+    pre .selector-id { color: #f0c674 !important; }
+    pre .selector-class { color: #81a2be !important; }
+    pre .selector-pseudo { color: #8abeb7 !important; }
+    pre .selector-attr { color: #f0c674 !important; }
+    pre .property { color: #81a2be !important; }
+    pre .name { color: #c66 !important; }
+    pre .name-tag { color: #c66 !important; }
+    pre .type { color: #b294bb !important; }
+    pre .attr { color: #de935f !important; }
+    pre .pseudo { color: #8abeb7 !important; }
+    pre .link { color: #8abeb7 !important; }
+    pre .subst { color: #c5c8c6 !important; }
+    pre .literal { color: #de935f !important; }
+    pre .bullet { color: #b5bd68 !important; }
+    pre .code { color: #c5c8c6 !important; }
+    pre .emphasis { font-style: italic !important; }
+    pre .strong { font-weight: bold !important; }
+}
