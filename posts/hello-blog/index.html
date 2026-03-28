@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head><!-- hexo injector head_begin start --><link href="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/css/index.css" rel="stylesheet"/><!-- hexo injector head_begin end -->
+  <!-- 元数据 -->
+  <meta charset="utf-8">
+  <link rel="icon" href="https://i.imgs.ovh/2026/01/24/yqtrtN.jpeg">
+  
+  <title>Hello, Blog！ | Cute_zsz 的阁楼</title>
+  
+  <meta name="author" content="Cute_zsz" />
+  <meta http-equiv="Cache-Control" content="no-transform" />
+  <meta http-equiv="Cache-Control" content="no-siteapp" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="robots" content="index,follow" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta name="format-detection" content="telphone=no, email=no" />
+  
+    <meta name="keywords" content="博客日常" />
+  
+  <meta name="description" content="总览Hello, Blog!我是Cute_zsz，是一名现役OIer，热爱编程、动漫和数学，现在上初二。 关于我的名字Cute_zsz直译来是可爱的zsz（下划线！），zsz是我名字的缩写，Cute一词，来源于我的群友。群友把名字换成我的，造出了生气的zsz、可爱的zsz等杰作，群里面充满了快活的空气（）我个人是比较喜欢Cute_zsz这个id，这也比较符合我二次元小登的形象（） 关于我的一些链接">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello, Blog！">
+<meta property="og:url" content="http://cutezsz.github.io/posts/hello-blog/index.html">
+<meta property="og:site_name" content="Cute_zsz 的阁楼">
+<meta property="og:description" content="总览Hello, Blog!我是Cute_zsz，是一名现役OIer，热爱编程、动漫和数学，现在上初二。 关于我的名字Cute_zsz直译来是可爱的zsz（下划线！），zsz是我名字的缩写，Cute一词，来源于我的群友。群友把名字换成我的，造出了生气的zsz、可爱的zsz等杰作，群里面充满了快活的空气（）我个人是比较喜欢Cute_zsz这个id，这也比较符合我二次元小登的形象（） 关于我的一些链接">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.imgs.ovh/2026/01/24/yqtrtN.jpeg">
+<meta property="article:published_time" content="2025-10-04T06:20:41.000Z">
+<meta property="article:modified_time" content="2026-02-24T06:36:03.318Z">
+<meta property="article:author" content="Cute_zsz">
+<meta property="article:tag" content="博客日常">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.imgs.ovh/2026/01/24/yqtrtN.jpeg">
+  
+  <!-- 站点验证相关 -->
+  
+    
+    
+    
+  
+  <!-- 样式表文件 -->
+  <link rel="stylesheet" id="kratos-css" href="/css/kratosr.min.css" media="all"></script>
+  
+    <link rel="stylesheet" id="darkmode-css" href="/css/kr-color-dark.min.css" media="(prefers-color-scheme: dark)"></script>
+    <script src="/js/kr-dark.min.js"></script>
+  
+  
+    <link rel="stylesheet" id="highlight-css" href="/css/highlight/light.min.css" media="all"></script>
+  
+  <link rel="stylesheet" id="fontawe-css" href="/vendors/font-awesome@4.7.0/css/font-awesome.min.css" media="all"></script>
+
+
+  <!-- 引入 Font Awesome 5 以支持 Bilibili 等新图标 -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
+
+  <link rel="stylesheet" id="nprogress-css" href="/vendors/nprogress@0.2.0/nprogress.css" media="all"></script>
+  
+  
+  
+    <link rel="stylesheet" href="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"></script>
+  
+  
+
+  <!-- 引入思源宋体 (使用 BootCDN 镜像) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap" />
+
+  <!-- 不得不预先加载的一些JS文件 -->
+  <script src="/vendors/jquery@3.6.0/dist/jquery.min.js"></script>
+  
+    <script src="/vendors/qrcode_js@1.0.0/qrcode.min.js"></script>
+  
+  
+  <style>
+    
+    
+  </style>
+  
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><style type="text/css">
+.spoiler {
+  display: inline;
+}
+p.spoiler {
+  display: flex;
+}
+.spoiler a {
+  pointer-events: none;
+}
+.spoiler-blur, .spoiler-blur > * {
+  transition: text-shadow .5s ease;
+}
+.spoiler .spoiler-blur, .spoiler .spoiler-blur > * {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 10px grey;
+  cursor: pointer;
+}
+.spoiler .spoiler-blur:hover, .spoiler .spoiler-blur:hover > * {
+  text-shadow: 0 0 5px grey;
+}
+.spoiler-box, .spoiler-box > * {
+  transition: color .5s ease,
+  background-color .5s ease;
+}
+.spoiler .spoiler-box, .spoiler .spoiler-box > * {
+  color: black;
+  background-color: black;
+  text-shadow: none;
+}</style><meta name="generator" content="Hexo 7.3.0"></head>
+
+
+    <body class="custom-background">
+        <div id="kratos-wrapper">
+    <div id="kratos-page">
+        <div id="kratos-header">
+            <header id="kratos-desktop-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="nav-header">
+                        <nav id="kratos-menu-wrap">
+                            <ul id="kratos-primary-menu" class="sf-menu">
+                                
+                                    
+                                    
+                                        
+                                            <li><a href="/"><i class="fa fa-home"></i>首页</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/friends/"><i class="fa fa-paw"></i>推荐浏览</a></li>
+                                        
+                                    
+                                        
+                                            <li>
+                                                <a><i class="fa fa-link"></i>链接</a>
+                                                <ul class="sub-menu">
+                                                    
+                                                        
+                                                    
+                                                        
+                                                            <li><a href="https://cutezsz.github.io/posts/cute-zsz">个人简介</a></li>
+                                                        
+                                                    
+                                                        
+                                                            <li><a target="_blank" rel="noopener" href="https://github.com/Cutezsz/Cutezsz.github.io">项目链接</a></li>
+                                                        
+                                                    
+                                                </ul>
+                                            </li>
+                                        
+                                    
+                                
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <header id="kratos-mobile-topnav" class="kratos-topnav">
+                <div class="container">
+                    <div class="color-logo"><a href="/">Cute_zsz 的阁楼</a></div>
+                    <div class="nav-toggle">
+                        <a class="kratos-nav-toggle js-kratos-nav-toggle">
+                            <i></i>
+                        </a>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="kratos-start kratos-hero-2">
+            <!-- <div class="kratos-overlay"></div> -->
+            <div class="kratos-cover kratos-cover-2 text-center">
+                <div class="desc desc2 animate-box">
+                    <a href="/">
+                        <h2>Cute_zsz 的阁楼</h2> <br />
+                        <span>「相信奇迹的人，本身就和奇迹一样了不起！」</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="kratos-blog-post">
+            <div class="container">
+                <div id="main" class="row">
+                    
+
+        
+
+            <section class="col-md-8">
+
+        
+
+            <article itemscope itemtype="https://schema.org/Article">
+    
+    <link itemprop="mainEntityOfPage" href="http://cutezsz.github.io/posts/hello-blog/">
+    <div class="kratos-hentry kratos-post-inner clearfix">
+        <header class="kratos-entry-header">
+            
+                <h1 class="kratos-entry-title text-center" itemprop="name headline">Hello, Blog！</h1>
+            
+            
+            <ul class="kratos-post-meta text-center">
+                <li><time datetime="2025-10-04T06:20:41.000Z" itemprop="datePublished"><i class="fa fa-calendar"></i> 2025-10-04</time></li>
+                <li itemprop="author" itemscope itemtype="https://schema.org/Person">
+                    <i class="fa fa-user"></i> 作者 <span itemprop="name">Cute_zsz</span>
+                </li>
+                
+                    <li>
+                        <i class="fa fa-edit"></i> 
+                        
+                        
+                            552
+                        
+                        字
+                    </li>
+                
+                
+                    <li id="/posts/hello-blog/" class="leancloud_visitors" data-flag-title="Hello, Blog！">
+                        <i class="fa fa-eye"></i>
+                        <span class="leancloud-visitors-count"> </span> 次阅读
+                    </li>
+                
+            </ul>
+        </header>
+        <div class="kratos-post-content">
+            
+            <div id="expire-alert" class="alert alert-warning hidden" role="alert">
+                <div class="icon"><i class="fa fa-warning"></i></div>
+                <div class="text"><p>本文最后编辑于 <time datetime="1771914963318"></time> 前，其中的内容可能需要更新。</p></div>
+            </div>
+            
+            
+            
+                <div class="kratos-post-inner-toc toc-div-class" >
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E8%A7%88"><span class="toc-number">1.</span> <span class="toc-text">总览</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E5%90%8D%E5%AD%97"><span class="toc-number">2.</span> <span class="toc-text">关于我的名字</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E4%B8%80%E4%BA%9B%E9%93%BE%E6%8E%A5"><span class="toc-number">3.</span> <span class="toc-text">关于我的一些链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-number">4.</span> <span class="toc-text">结语</span></a></li></ol>
+                </div>
+            
+            <hr />
+            <div itemprop="articleBody"><link rel="stylesheet" type="text&#x2F;css" href="https://cdn.jsdelivr.net/npm/hexo-tag-hint@0.3.1/dist/hexo-tag-hint.min.css"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/hint.css/2.4.1/hint.min.css"><h1 id="总览"><a href="#总览" class="headerlink" title="总览"></a>总览</h1><p>Hello, Blog!<br>我是Cute_zsz，是一名现役OIer，热爱编程、动漫和数学，现在上初二。</p>
+<h1 id="关于我的名字"><a href="#关于我的名字" class="headerlink" title="关于我的名字"></a>关于我的名字</h1><p><code>Cute_zsz</code>直译来是可爱的zsz（下划线！），zsz是我名字的缩写，Cute一词，来源于我的群友。群友把名字换成我的，造出了生气的zsz、可爱的zsz等杰作，群里面充满了快活的空气（）<br>我个人是比较喜欢<code>Cute_zsz</code>这个id，这也比较符合我二次元小登的形象（）</p>
+<h1 id="关于我的一些链接"><a href="#关于我的一些链接" class="headerlink" title="关于我的一些链接"></a>关于我的一些链接</h1><p>luogu：<a target="_blank" rel="noopener" href="https://www.luogu.com.cn/user/1065628">https://www.luogu.com.cn/user/1065628</a><br>github: <a target="_blank" rel="noopener" href="https://github.com/Cutezsz">https://github.com/Cutezsz</a><br>steam: <a target="_blank" rel="noopener" href="https://steamcommunity.com/profiles/76561199572803952/">https://steamcommunity.com/profiles/76561199572803952/</a><br>bilibili: <a target="_blank" rel="noopener" href="https://space.bilibili.com/1762679817?spm_id_from=333.1007.0.0">https://space.bilibili.com/1762679817?spm_id_from=333.1007.0.0</a><br>pixiv（？）：<a target="_blank" rel="noopener" href="https://www.pixiv.net/users/119416332">https://www.pixiv.net/users/119416332</a><br>qq：951255007<br>微信号：Cute_zsz<br>上述群聊：323360503</p>
+<h1 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h1><p>欢迎关注我的博客，目前博客可能在格式、文笔上有些瑕疵，也请大家多多包涵。有疑问欢迎联系我！<br>最后，与诸君共勉。</p>
+</div>
+        </div>
+        
+        <footer class="kratos-entry-footer clearfix">
+            
+                <div class="post-like-donate text-center clearfix" id="post-like-donate">
+                
+                
+                    <a class="share" href="javascript:;"><i class="fa fa-share-alt"></i> 分享</a>
+                    <div class="share-wrap" style="display: none;">
+    <div class="share-group">
+        <a href="javascript:;" class="share-plain qq" onclick="share('qq');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-qq"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain qzone" onclick="share('qzone');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-star"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weixin pop style-plain" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weixin"></i>
+            </div>
+            <div class="share-int">
+                <div class="qrcode" id="wechat-qr"></div>
+                <p>打开微信“扫一扫”，打开网页后点击屏幕右上角分享按钮</p>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain weibo" onclick="share('weibo');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-weibo"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain facebook style-plain" onclick="share('facebook');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-facebook"></i>
+            </div>
+        </a>
+        <a href="javascript:;" class="share-plain twitter style-plain" onclick="share('twitter');" rel="nofollow">
+            <div class="icon-wrap">
+                <i class="fa fa-twitter"></i>
+            </div>
+        </a>
+    </div>
+    <script type="text/javascript">
+        $(()=>{
+            new QRCode("wechat-qr", {
+                text: "http://cutezsz.github.io/posts/hello-blog/",
+                width: 150,
+                height: 150,
+                correctLevel : QRCode.CorrectLevel.H
+            });
+        });
+        function share(dest) {
+            const qqBase        = "https://connect.qq.com/widget/shareqq/index.html?";
+            const weiboBase     = "https://service.weibo.com/share/share.php?";
+            const qzoneBase     = "https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?";
+            const facebookBase  = "https://www.facebook.com/sharer/sharer.php?";
+            const twitterBase   = "https://twitter.com/intent/tweet?";
+            const hostUrl       = "http://cutezsz.github.io/posts/hello-blog/";
+            const title         = "「Hello, Blog！」";
+            const excerpt       = `总览Hello, Blog!我是Cute_zsz，是一名现役OIer，热爱编程、动漫和数学，现在上初二。
+关于我的名字Cute_zsz直译来是可爱的zsz（下划线！），zsz是我名字的缩写，Cute一词，来源于我的群友。群友把名字换成...`;
+            let _URL;
+            switch (dest) {
+                case "qq"       : _URL = qqBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";     break;
+                case "weibo"    : _URL = weiboBase+"url="+hostUrl+"&title="+title+excerpt;                                 break;
+                case "qzone"    : _URL = qzoneBase+"url="+hostUrl+"&title="+title+"&desc=&summary="+excerpt+"&site=cxpy";  break;
+                case "facebook" : _URL = facebookBase+"u="+hostUrl;                                                        break;
+                case "twitter"  : _URL = twitterBase+"text="+title+excerpt+"&url="+hostUrl;                                break;
+            }
+            window.open(_URL);
+        };
+    </script>
+</div>
+                
+                </div>
+            
+            <div class="footer-tag clearfix">
+                <div class="pull-left">
+                <i class="fa fa-tags"></i>
+                    <a class="tag-none-link" href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" rel="tag">博客日常</a>
+                </div>
+                <div class="pull-date">
+                    <time datetime="2026-02-24T06:36:03.318Z" itemprop="dateModified">最后编辑：2026-02-24</time>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+        <nav class="navigation post-navigation clearfix" role="navigation">
+            
+            
+            <div class="nav-next clearfix">
+                <a title=" 记我的国庆七天集训之旅（已完）" href="/posts/guoqing-jixun/">下一篇 &gt;</a>
+            </div>
+            
+        </nav>
+    
+    
+        <div id="v-comments" class="post-comments bg-image"></div>
+<script>
+    var load_comm = () => {
+        const init = () => {
+            new Valine({
+                el: '#v-comments',
+                appId: 'nLV43lQMFVCNTCbYhjP6lphP-MdYXbMMI',
+                appKey: 'zLQdxx5UheQSC3jv40ek5s0o',
+                visitor: true,
+                enableQQ: true,
+                path: '/posts/hello-blog/',
+                avatar: 'mp',
+                serverURLs: 'https://nlv43lqm.api.lncldglobal.com',
+                placeholder: '万水千山总是情，发个评论行不行~',
+            });
+        }
+        if (typeof Valine === 'undefined') {
+            const src = '/vendors/valine@1.4.18/dist/Valine.min.js';
+            $.getScript(src, init);
+        } else {
+            init();
+        }
+    };
+</script>
+<noscript>Please enable JavaScript to view the <a target="_blank" rel="noopener" href="https://valine.js.org/">comments powered by Valine.</a></noscript>
+    
+</article>
+
+        
+
+            </section>
+
+        
+
+                
+            
+
+<section id="kratos-widget-area" class="col-md-4 hidden-xs hidden-sm">
+    <!-- 文章和页面根据splitter来分割，没有的话就从头开始设置为sticky -->
+    
+    
+                <aside id="krw-about" class="widget widget-kratos-about clearfix">
+    <div class="photo-background"></div>
+    <div class="photo-wrapper clearfix">
+        <div class="photo-wrapper-tip text-center">
+            <img class="about-photo" src="/images/avatar.webp" loading="lazy" decoding="auto" />
+        </div>
+    </div>
+    <div class="textwidget">
+        <p class="text-center">无所事事的技术宅一枚啦
+</p>
+    </div>
+    <div class="site-meta">
+        <a class="meta-item" href="/archives/">
+            <span class="title">
+                文章
+            </span>
+            <span class="count">
+                21
+            </span>
+        </a>
+        <a class="meta-item" href="/categories/">
+            <span class="title">
+                分类
+            </span>
+            <span class="count">
+                5
+            </span>
+        </a>
+        <a class="meta-item" href="/tags/">
+            <span class="title">
+                标签
+            </span>
+            <span class="count">
+                10
+            </span>
+        </a>
+    </div>
+</aside>
+            
+                    <div class="sticky-area">
+                
+                    <aside id="krw-toc" class="widget widget-kratos-toc clearfix toc-div-class" >
+    <div class="photo-background"></div>
+    <h4 class="widget-title no-after">
+        <i class="fa fa-compass"></i>
+        文章目录
+        <span class="toc-progress-bar" role="progressbar" aria-label="阅读进度："></span>
+    </h4>
+    <div class="textwidget">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%80%BB%E8%A7%88"><span class="toc-text">总览</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E5%90%8D%E5%AD%97"><span class="toc-text">关于我的名字</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E6%88%91%E7%9A%84%E4%B8%80%E4%BA%9B%E9%93%BE%E6%8E%A5"><span class="toc-text">关于我的一些链接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BB%93%E8%AF%AD"><span class="toc-text">结语</span></a></li></ol>
+    </div>
+</aside>
+                
+                
+  <aside id="krw-categories" class="widget widget-kratos-categories clearfix">
+    <h4 class="widget-title"><i class="fa fa-folder"></i>分类目录</h4>
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E6%9D%82%E8%B0%88/">杂谈</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%9F%A5%E8%AF%86/">知识</a><span class="category-list-count">5</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%AB%9E%E8%B5%9B/">竞赛</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/%E7%BC%96%E7%A8%8B/">编程</a><span class="category-list-count">1</span></li></ul>
+  </aside>
+
+
+            
+                
+  <aside id="krw-tags" class="widget widget-kratos-tags clearfix">
+    <h4 class="widget-title"><i class="fa fa-tags"></i>标签聚合</h4>
+      <div class="tag-clouds">
+        <a href="/tags/%E4%BD%93%E8%82%B2/" style="font-size: 0.6em;">体育</a> <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AD%A6%E5%A5%A5%E8%B5%9B/" style="font-size: 0.8em;">信息学奥赛</a> <a href="/tags/%E5%8D%9A%E5%AE%A2%E6%97%A5%E5%B8%B8/" style="font-size: 0.6em;">博客日常</a> <a href="/tags/%E6%8A%80%E6%9C%AF/" style="font-size: 0.6em;">技术</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 0.7em;">数学</a> <a href="/tags/%E6%95%B0%E5%AD%A6%E5%BB%BA%E6%A8%A1/" style="font-size: 0.6em;">数学建模</a> <a href="/tags/%E7%94%9F%E6%B4%BB%E6%B8%B8%E8%AE%B0/" style="font-size: 0.65em;">生活游记</a> <a href="/tags/%E7%AC%94%E8%AE%B0/" style="font-size: 0.7em;">笔记</a> <a href="/tags/%E8%87%AA%E4%BB%8B/" style="font-size: 0.6em;">自介</a> <a href="/tags/%E9%A2%98%E8%A7%A3/" style="font-size: 0.75em;">题解</a>
+      </div>
+  </aside>
+
+            
+                
+  <aside id="krw-posts" class="widget widget-kratos-posts">
+  <h4 class="widget-title"><i class="fa fa-file"></i>最新文章</h4>
+  <div class="tab-content">
+      <ul class="list-group">
+        
+        
+          
+          
+            <a class="list-group-item" href="/posts/cf-round-805-div3/"><i class="fa  fa-book"></i> 【赛解】Codeforces Round 805 (Div. 3)</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/cute-zsz/"><i class="fa  fa-book"></i> 【自介】野生 Cute_zsz 捕获指南</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/abc447f/"><i class="fa  fa-book"></i> 【题解】[ABC447F] Centipede Graph</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/math-lim-partial/"><i class="fa  fa-book"></i> 【数学】从极限到偏微分</a>
+            
+          
+        
+          
+          
+            <a class="list-group-item" href="/posts/math-pe/"><i class="fa  fa-book"></i> 【数学建模】体测逃课小妙招</a>
+            
+          
+        
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+          
+            
+      </ul>
+  </div>
+  </aside>
+
+            
+    </div>
+</section>
+        
+        </div>
+    </div>
+</div>
+<footer>
+    <div id="footer"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3 footer-list text-center">
+                    <ul class="kratos-social-icons">
+                        <!-- Keep for compatibility -->
+                        <li><a target="_blank" rel="nofollow" href="https://weibo.com/cutezsz"><i class="fa fa-weibo"></i></a></li>
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://twitter.com/Cute_zsz"><i class="fa fa-twitter"></i></a></li>
+                        
+                        
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://github.com/Cutezsz"><i class="fa fa-github"></i></a></li>
+                        
+                        <li><a target="_blank" rel="nofollow" href="https://steamcommunity.com/id/Cute_zsz"><i class="fa fa-steam"></i></a></li>
+                        <li><a target="_blank" rel="nofollow" href="https://www.zhihu.com/people/36-55-76-90"><i class="fa fa-zhihu"></i></a></li>
+                        <!-- Bilibili -->
+                        <!-- Bilibili (使用 SVG) -->
+                        
+                            <li>
+                                <a target="_blank" href="https://space.bilibili.com/1762679817">
+                                    <img src="images/footer_icon/bilibili.svg" 
+                                        style="width: 3em; height: 3em; vertical-align: middle; border-radius: 4px; filter: grayscale(100%); brightness(1); transition: filter 0.3s ease;" 
+                                        onmouseover="this.style.filter='grayscale(0%)'" 
+                                        onmouseout="this.style.filter='grayscale(100%)'"
+                                        alt="Bilibili">
+                                </a>
+                            </li>
+                        
+                        
+                            <li>
+                                <a target="_blank" rel="nofollow" href="https://www.luogu.com.cn/user/1065628">
+                                    <img src="images/footer_icon/luogu.png" 
+                                        style="width: 2.25em; height: 3em; vertical-align: middle; filter: grayscale(100%); transition: filter 0.3s ease;" 
+                                        onmouseover="this.style.filter='grayscale(0%)'" 
+                                        onmouseout="this.style.filter='grayscale(100%)'"
+                                        alt="Luogu">
+                                </a>
+                            </li>
+                        
+                        <!-- QQ -->
+                        
+                            <li>
+                                <a target="_blank" href="tencent://message/?uin=951255007&Site=Sambow&Menu=yes">
+                                    <i class="fa fa-qq"></i>
+                                </a>
+                            </li>
+                        
+
+                        <!-- New links -->
+                        
+                    </ul>
+                    <ul class="kratos-copyright">
+                        <div>
+                            <li>&copy; 2026 Cute_zsz 的阁楼 版权所有.</li>
+                            <li>作者已咕咕<span id="span_dt">Loading...</span></li>
+                        </div>
+                        <div>
+                            <li>Theme <a href="https://github.com/Candinya/Kratos-Rebirth" target="_blank">Kratos:Rebirth</a></li>
+                            <li>Site built with&nbsp;<i class="fa fa-heart throb" style="color:#d43f57"></i>&nbsp;by Cute_zsz.</li>
+                        </div>
+                        <div>
+                            <li>Powered by <a href="https://hexo.io" target="_blank" rel="nofollow">Hexo</a></li>
+                            <li>Hosted on <a href="https://github.io" target="_blank">Github Pages</a></li>
+                        </div>
+                        <div>
+                            
+                            
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="kr-tool text-center">
+            <div class="tool">
+                
+                    <div class="box search-box">
+                        <a href="/search/">
+                            <span class="fa fa-search"></span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="box theme-box" id="darkmode-switch">
+                        <span class="fa fa-adjust"></span>
+                    </div>
+                
+                
+                
+                    <div class="box group-box">
+                        <a href="https://qm.qq.com/q/WyYTqDpakq" target="_blank" rel="nofollow">
+                            <span class="fa fa-users"></span>
+                        </a>
+                    </div>
+                
+            </div>
+            <div class="box gotop-box">
+                <span class="fa fa-chevron-up"></span>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</div>
+
+        <script defer src="/vendors/bootstrap@3.3.4/dist/js/bootstrap.min.js"></script>
+<script defer src="/vendors/nprogress@0.2.0/nprogress.js"></script>
+<script>
+    if (!window.kr) {
+        window.kr = {};
+    }
+    window.kr.notMobile = (!(navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)));
+    window.kr.siteRoot = "/";
+</script>
+
+
+    <script async src="/js/candy.min.js"></script>
+
+
+
+
+    <script defer src="/vendors/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<script defer src="/js/kratosr.min.js"></script>
+<script defer src="/js/pjax.min.js"></script>
+
+
+
+<!-- Extra support for third-party plguins  -->
+
+
+    <!-- hexo injector body_end start --><script src="https://fastly.jsdelivr.net/npm/hexo-tag-common@0.2.0/js/index.js"></script><!-- hexo injector body_end end --></body>
+</html>
