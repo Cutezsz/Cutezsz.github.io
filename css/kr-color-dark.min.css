@@ -441,10 +441,3 @@ span.mjx-chtml.MJXc-display {
 
 /*# sourceMappingURL=../maps/kr-color-dark.min.css.map */
 
-/* 手机端隐藏头图 */
-@media (max-width: 767px) {
-    .kratos-entry-thumb-new {
-        display: none !important;
-    }
-}
-
